@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e390e2d7.css",
+    "main.js": "/static/js/main.93df5a3b.js",
+    "static/js/462.0d2c0f98.chunk.js": "/static/js/462.0d2c0f98.chunk.js",
+    "static/media/raccfeed.mp4": "/static/media/raccfeed.0249f2b9b1fd60059424.mp4",
+    "static/media/racccamera.mp4": "/static/media/racccamera.a6d5dd8f9329472e73c0.mp4",
+    "static/media/hiking.jpeg": "/static/media/hiking.6d1be6fca93e92fd5552.jpeg",
+    "static/media/surf.jpeg": "/static/media/surf.e37cfa1f4fa354513c7d.jpeg",
+    "static/media/pottery.png": "/static/media/pottery.9fc8cb2163515217435b.png",
+    "static/media/daphneheadshot.png": "/static/media/daphneheadshot.1f136051542158107a09.png",
+    "static/media/raccwireframe.png": "/static/media/raccwireframe.c8dd8a459ae068ab6b3e.png",
+    "static/media/SF-Pro-Display-Regular.otf": "/static/media/SF-Pro-Display-Regular.d95919824936a9bf4051.otf",
+    "static/media/raccpallette.png": "/static/media/raccpallette.5c6491fc6625b65ad5c9.png",
+    "static/media/tennis.JPG": "/static/media/tennis.2413bdc7f2988688a0d0.JPG",
+    "static/media/dog.jpg": "/static/media/dog.b0ef23d6c65c81d8c3b1.jpg",
+    "static/media/racctracc.jpeg": "/static/media/racctracc.ac86a2054c3206b9a0a9.jpeg",
+    "static/media/ucsd.jpg": "/static/media/ucsd.58a1aee5e19436c9275c.jpg",
+    "static/media/rafting.JPG": "/static/media/rafting.e1083b14e69765afea14.JPG",
+    "static/media/raccwelcome.mp4": "/static/media/raccwelcome.af5ae7ae8d6ccab95d0d.mp4",
+    "static/media/Daphne_Wu_Resume1.pdf": "/static/media/Daphne_Wu_Resume1.90db8c72e93a566c1b20.pdf",
+    "static/media/NewYorkMedium-Regular.otf": "/static/media/NewYorkMedium-Regular.aeaf41552559f018694e.otf",
+    "static/media/SuisseIntl-Light.ttf": "/static/media/SuisseIntl-Light.2e62a4bd31af0b2dafab.ttf",
+    "static/media/Sono-Regular.ttf": "/static/media/Sono-Regular.131f9296d593806b07b7.ttf",
+    "static/media/portland.jpg": "/static/media/portland.12ccefaebe1dc78c72de.jpg",
+    "static/media/logo.png": "/static/media/logo.65e2aec101af69a85a51.png",
+    "static/media/loading-video.mp4": "/static/media/loading-video.5251ba7920efc00a3e4b.mp4",
+    "index.html": "/index.html",
+    "main.e390e2d7.css.map": "/static/css/main.e390e2d7.css.map",
+    "main.93df5a3b.js.map": "/static/js/main.93df5a3b.js.map",
+    "462.0d2c0f98.chunk.js.map": "/static/js/462.0d2c0f98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e390e2d7.css",
+    "static/js/main.93df5a3b.js"
+  ]
+}

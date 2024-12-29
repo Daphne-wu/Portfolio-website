@@ -5,7 +5,9 @@ const Navbar = () => (
   <nav className="flex items-center justify-between px-8 py-4 bg-[#141414] fixed top-0 left-0 w-full z-50">
     {/* Logo or Placeholder on the left */}
     <div className="flex items-center">
-      <img src={logo} alt="Logo" className="h-12" />
+        <Link to="/hero" className="hover:text-vibrant-yellow transition-colors font-sono">
+          <img src={logo} alt="Logo" className="h-12" />
+        </Link>
     </div>
 
     {/* Navbar items */}

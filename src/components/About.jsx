@@ -19,14 +19,15 @@ return (
       {/* About Me Header */}
       <div className="about-me-header flex flex-col items-center sm:flex-row sm:items-start">
         {/* Photo Section */}
-        <div className="photo-container flex-shrink-0 mr-8 mb-8 sm:mb-0 mt-24 ">
+        <div className="photo-container flex-shrink-0 mr-8 mb-8 sm:mb-0 mt-24">
+        <a href="https://www.linkedin.com/in/daphne-wu-a44921168/" target="_blank" rel="noopener noreferrer">
           <img
             src={headshot}
             alt="Daphne"
             className="about-me-photo rounded-full w-40 h-40 sm:w-56 sm:h-56 object-cover"
           />
-        </div>
-
+        </a>
+      </div>
         <div className="text-center sm:text-left">
           <h1 className="text-4xl sm:text-6xl font-bold font-sono mt-32">
             hi, i'm daphne.
