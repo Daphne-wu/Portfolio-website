@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import '/Users/daphnewu/Desktop/Projects/portfolio/src/components/styles/Cursor.css';
+import './styles/Cursor.css';
 
 const Cursor = () => {
   useEffect(() => {

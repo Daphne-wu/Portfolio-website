@@ -260,17 +260,16 @@
 
 // export default ProjectRacc;
 import React, { useState, useEffect } from "react";
-import '/Users/daphnewu/Desktop/Projects/portfolio/src/components/styles/Racc.css';
+import '../styles/Racc.css';
 import { motion } from "framer-motion";
-import raccwelcome from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/raccwelcome.mp4";
-import racctracc from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/racctracc.jpeg";
-import raccfeed from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/raccfeed.mp4";
-import racccamera from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/racccamera.mp4";
-import raccwireframe from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/raccwireframe.png";
-import raccpallette from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/raccpallette.png";
-import raccprofile from "/Users/daphnewu/Desktop/Projects/portfolio/src/components/assets/images/raccprofile.mp4";
+import raccwelcome from "../assets/images/raccwelcome.mp4";
+import racctracc from "../assets/images/racctracc.jpeg";
+import raccfeed from "../assets/images/raccfeed.mp4";
+import racccamera from "../assets/images/racccamera.mp4";
+import raccwireframe from "../assets/images/raccwireframe.png";
+import raccpallette from "../assets/images/raccpallette.png";
+import raccprofile from "../assets/images/raccwelcome.mp4";
 import Navbar from '../Navbar';
-
 
 const ProjectRacc = () => {
   // const [inView, setInView] = useState(false);
