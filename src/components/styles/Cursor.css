@@ -1,0 +1,35 @@
+/* Custom Cursor Styling */
+.custom-cursor {
+    position: fixed;
+    width: 35px; /* Smaller default size */
+    height: 35px;
+    background-color: rgba(200, 200, 200, 0.3); /* Very transparent grey */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+    z-index: 9999;
+    mix-blend-mode: difference; /* Optional: helps the cursor blend better with the background */
+  }
+  
+  /* Hover effect: grow the cursor when hovering over links or buttons */
+  a:hover .custom-cursor,
+  button:hover .custom-cursor {
+    width: 40px; /* Larger size when hovered */
+    height: 40px;
+    background-color: rgba(169, 169, 169, 0.6); /* Slightly more opaque when hovering */
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+  }
+  
+  /* Optional: Add smooth cursor effects for links or buttons */
+  a,
+  button {
+    position: relative;
+  }
+  
+  /* Optional: Hide default cursor on hover over links/buttons */
+  a:hover,
+  button:hover {
+    cursor: none;
+  }
+  

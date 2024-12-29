@@ -1,0 +1,18 @@
+/* Loading screen container */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* White background */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  /* Video styling */
+  .loading-video {
+    object-fit: contain; /* Keeps the video entirely visible */
+    max-width: 70%; /* Restrict width */
+    max-height: 70%; /* Restrict height */
+  }
+  

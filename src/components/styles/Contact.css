@@ -1,0 +1,174 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #141414;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .message-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Make the message box take up the entire screen */
+    padding: 40px;
+    box-sizing: border-box;
+    background: #141414;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .contact-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ccc;
+    animation: fadeIn 1s ease-out 0.5s;
+  }
+  
+  .message-input {
+    width: 100%;
+    height: 100vh; /* Default height */
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    resize: none;
+    margin-bottom: 30px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .message-input:focus {
+    border: 2px solid #141414; /* Muted blue for focus */
+    outline: none;
+  }
+  
+  .send-btn, .back-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+    width: 150px;  /* Set fixed width */
+  }
+  
+  .send-btn {
+    margin-right: 20px; /* Add space between buttons */
+    text-transform: lowercase; /* Make text lowercase */
+  }
+  
+  .send-btn:hover, .back-btn:hover {
+    background-color: #4f9bcf; /* Muted blue hover color */
+    border-color: transparent;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  .send-btn:active, .back-btn:active {
+    transform: translateY(1px);
+  }
+  
+  .send-btn.sending {
+    background-color: #ff5722;
+    cursor: not-allowed;
+  }
+  
+  .status {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .status.success {
+    color: #4caf50;
+  }
+  
+  .status.error {
+    color: #ff5722;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .button-container button {
+    display: inline-block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2.5rem; /* Smaller title for tablets */
+    }
+  
+    .message-input {
+      height: 220px; /* Reduce height for tablets */
+    }
+  
+    .send-btn, .back-btn {
+      width: 130px; /* Smaller buttons for tablets */
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  
+    .button-container {
+      flex-direction: column; /* Stack buttons on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: 2rem; /* Smaller title for mobile */
+    }
+  
+    .message-input {
+      height: 200px; /* Reduce height further for mobile */
+    }
+  
+    .send-btn, .back-btn {
+      width: 120px; /* Even smaller buttons for mobile */
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
