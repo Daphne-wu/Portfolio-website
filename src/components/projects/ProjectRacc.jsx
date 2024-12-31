@@ -268,7 +268,7 @@ import raccfeed from "../assets/images/raccfeed.mp4";
 import racccamera from "../assets/images/racccamera.mp4";
 import raccwireframe from "../assets/images/raccwireframe.png";
 import raccpallette from "../assets/images/raccpallette.png";
-import raccprofile from "../assets/images/raccwelcome.mp4";
+import raccprofile from "../assets/images/raccprofile.mp4";
 import Navbar from '../Navbar';
 
 const ProjectRacc = () => {
