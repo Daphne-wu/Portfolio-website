@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -47,6 +47,9 @@ const App = () => {
       <Cursor /> 
 
       <Routes>
+        {/* Redirect root path to /hero */}
+        <Route path="/" element={<Navigate to="/hero" />} /> 
+
         <Route
           path="/hero"
           element={
