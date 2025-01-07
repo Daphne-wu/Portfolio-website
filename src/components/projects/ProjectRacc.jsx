@@ -302,50 +302,48 @@ const ProjectRacc = () => {
 <div className="bg-[#141414] text-white font-sono">
   <Navbar />
   {/* Hero Section */}
-  <section
-    className="h-[500px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex flex-col justify-center items-center bg-[#141414] px-6 md:px-16 pt-16"  // Added pt-32 for extra padding
+    <section
+    className="h-[500px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex flex-col md:flex-row justify-center items-center bg-[#141414] px-6 md:px-16 pt-16 space-y-6 md:space-y-0"
     aria-label="Hero Section"
   >
-    <div className="w-full flex flex-col md:flex-row items-center justify-between">
-      {/* Text Content */}
-      <div className="md:w-1/2 text-center md:text-left">
-        <motion.h1
-          className="text-9xl md:text-7xl font-bold text-white"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          aria-labelledby="hero-title"
-        >
-          RaccTracc
-        </motion.h1>
-        <motion.p
-          className="text-xl md:text-2xl text-gray-300 font-sf mt-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          aria-describedby="hero-subtitle"
-        >
-          Enhancing Raccoon Appreciation at UCSD
-        </motion.p>
-      </div>
-      {/* Video Content */}
-      <div className="flex justify-center md:w-1/2 mt-12 md:mt-0"> {/* Adjusted mt-12 */}
-        <motion.video
-          className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] max-h-[500px] rounded-lg shadow-lg"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src={raccwelcome} type="video/mp4" />
-          Your browser does not support the video tag.
-        </motion.video>
-      </div>
+    {/* Text Content */}
+    <div className="w-full md:w-1/2 text-center md:text-left">
+      <motion.h1
+        className="text-5xl md:text-7xl font-bold text-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        RaccTracc
+      </motion.h1>
+      <motion.p
+        className="text-xl md:text-2xl text-gray-300 mt-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        Enhancing Raccoon Appreciation at UCSD
+      </motion.p>
+    </div>
+
+    {/* Video Content */}
+    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+      <motion.video
+        className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] max-h-[300px] rounded-lg shadow-lg"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={raccwelcome} type="video/mp4" />
+        Your browser does not support the video tag.
+      </motion.video>
     </div>
   </section>
+
 
       {/* Project Overview Section with Image */}
       <motion.section
@@ -356,10 +354,10 @@ const ProjectRacc = () => {
         transition={{ duration: 0.5 }}
         aria-labelledby="project-overview"
       >
-        <div className="md:w-1/3">
+        <div className="md:w-1/3 flex justify-center">
           <motion.video
-            src={raccfeed} // Replace with your video source
-            className="rounded-lg shadow-lg w-[300px] mx-auto hover:scale-105 transition-transform"
+            src={raccfeed}
+            className="rounded-lg shadow-lg w-[220px] sm:w-[260px] md:w-[300px] max-h-[300px] hover:scale-105 transition-transform"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -368,23 +366,22 @@ const ProjectRacc = () => {
             muted
             playsInline
             aria-label="RaccTracc app video demo"
-          >
-            Your browser does not support the video tag.
-          </motion.video>
+          />
         </div>
         <div className="md:w-2/3 md:pl-8">
           <h2 className="text-5xl font-bold text-vibrant-yellow" id="project-overview">
             Project Overview
           </h2>
           <p className="text-gray-300 text-lg mt-4 font-sf leading-relaxed">
-            RaccTracc is a web application developed to enhance the way UCSD students experience and engage with raccoons on campus. By offering real-time raccoon sightings, educational resources on raccoon safety and behavior, and a platform for community engagement, RaccTracc serves as a unique space for raccoon lovers to connect, learn, and enjoy these fascinating creatures. With over 6000 followers on the popular @ucsd.raccoons Instagram, we sought to build on that enthusiasm by creating a more interactive and informative experience.
+            RaccTracc is a web application developed to enhance the way UCSD students experience and engage with raccoons on campus. By offering real-time raccoon sightings, educational resources on raccoon safety and behavior, and a platform for community engagement, RaccTracc serves as a unique space for raccoon lovers to connect, learn, and enjoy these fascinating creatures.
           </p>
         </div>
       </motion.section>
 
+
       {/* Purpose & Problem Section */}
       <motion.section
-        className="py-12 px-6 md:px-16 flex flex-col md:flex-row items-center"
+        className="py-12 px-6 md:px-16 flex flex-col md:flex-row items-center space-y-8 md:space-y-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -413,7 +410,7 @@ const ProjectRacc = () => {
         </div>
 
         {/* Video Content: 1st Video */}
-        <div className="md:w-[350px] mt-6 md:mt-0 pl-8 md:pl-16"> {/* Added more padding on the left for spacing */}
+        <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] max-h-[300px] mt-6 md:mt-0 pl-8 md:pl-16"> {/* Added more padding on the left for spacing */}
           <motion.video
             src={racccamera} // Replace with your video source
             className="rounded-lg shadow-lg w-full hover:scale-105 transition-transform"
@@ -431,7 +428,7 @@ const ProjectRacc = () => {
         </div>
 
         {/* Video Content: 2nd Video (new one added) */}
-        <div className="md:w-[350px] mt-6 md:mt-0 pl-8 md:pl-16"> {/* Added padding for the second video */}
+        <div className="w-[180px] sm:w-[220px] md:w-[260px] lg:w-[320px] max-h-[300px] mt-6 md:mt-0 pl-8 md:pl-16"> {/* Added padding for the second video */}
           <motion.video
             src={raccprofile} // Replace with your second video source
             className="rounded-lg shadow-lg w-full hover:scale-105 transition-transform"

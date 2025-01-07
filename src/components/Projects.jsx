@@ -6,10 +6,8 @@ import racctracc from "./assets/images/racctracc.jpeg";
 const Projects = () => {
   const projects = [
     { id: "racctracc", title: "RaccTracc", imageUrl: racctracc },
-    { id: "3d-art", title: "3D Art", imageUrl: "/path/to/3dart.jpg" },
-    { id: "medium-12pt", title: "Medium 12pt", imageUrl: "/path/to/medium12pt.jpg" },
-    { id: "apple-design", title: "Apple Design", imageUrl: "/path/to/appledesign.jpg" },
-    { id: "textures", title: "Textures", imageUrl: "/path/to/textures.jpg" },
+    { id: "successorator", title: "Successorator (incoming)", imageUrl: "/path/to/3dart.jpg" },
+    { id: "GeoGuessr", title: "GeoGuessr (incoming)", imageUrl: "/path/to/3dart.jpg" },
   ];
 
   return (
