@@ -525,7 +525,7 @@ const ProjectRacc = () => {
           </motion.div>
           {/* Challenge 4 */}
           <motion.div
-            className="flex items-center bg-[#141414] p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
+            className="flex items-center bg-black bg-opacity-50 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
